@@ -21,8 +21,11 @@ const requestListener = (request, response) => {
 
         request.on('end', () => {
             body = Buffer.concat(body).toString();
-            response.end(`<h1>Hai, ${body}!</h1>`)
-        })
+            const { name } = JSON.parse(body);
+            response.end(`<h1>Hai, ${name}!</h1>`)
+
+            // hasil : curl -X POST -H "Content-Type: application/json" http://localhost:5000 -d "{\"name\": \"Dicoding\"}"
+        });
 
 
         // response.end('<h1>Hai!</h1>');
