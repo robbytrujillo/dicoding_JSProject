@@ -1,3 +1,3 @@
 # dicoding learn Node JS
 
-<h2>NodeJS Web Server</h2>
+<h2>Project NodeJS Web Server</h2>
