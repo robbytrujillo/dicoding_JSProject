@@ -5,5 +5,5 @@ const requestListener = (request, response) => {
     response.write('</body>');
     response.write('</html>');
     response.end();
-    response.end('<html><body><h1>Hello, World</h1></body></html>')
+    response.end('<html><body><h1>Hello, World</h1></body></html>');
 }
